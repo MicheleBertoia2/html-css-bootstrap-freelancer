@@ -132,15 +132,28 @@ header .mb-burger i:hover {
   border-radius: 0;
 }
 
-
-/* footer */
-
 .mb-container-mini {
   width: 60%;
   margin: 0 auto;
   max-width: 992px;
 }
 
+
+/* footer */
+
 footer {
   background-color: #3a546d;
+}
+
+footer .social i {
+  font-size: 1rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 20px;
+  cursor: pointer;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #1abc9c;
 }
