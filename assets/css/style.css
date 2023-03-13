@@ -8,6 +8,31 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.mb-satan-star {
+  width: 30%;
+  margin-bottom: 15px;
+}
+
+.mb-satan-star i {
+  font-size: 1.5rem;
+  width: 20%;
+
+}
+
+.mb-satan-star .mb-satanline {
+  width: 40%;
+  height: 5px;
+  border-radius: 3px;
+  padding: 0 15px;
+}
+
 
 /* header */
 
@@ -52,24 +77,63 @@ header .mb-burger i:hover {
   background-color: #1abc9c;
 }
 
-.mb-jumbo .mb-satan-star {
-  width: 30%;
-  margin-bottom: 15px;
-}
 
-.mb-jumbo .mb-satan-star i {
-  font-size: 1.5rem;
-  width: 20%;
-
-}
-
-.mb-jumbo .mb-satan-star .mb-satanline {
-  width: 40%;
-  height: 5px;
-  border-radius: 3px;
-  padding: 0 15px;
+.mb-satan-star .mb-satanline {
   background-color: white;
 }
+
+/* main */
+
+.portfolio .mb-satan-star .mb-satanline,
+.contact .mb-satan-star .mb-satanline {
+  background-color: black;
+}
+
+.portfolio .works {
+  position: relative;
+  cursor: pointer;
+}
+
+.portfolio .works .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0ed3ac70;
+  font-size: 3rem;
+  color: white;
+  opacity: 0;
+}
+
+.portfolio .works:hover .overlay {
+  opacity: 1;
+}
+
+.contact .mb-form input,
+.contact .mb-form textarea {
+  padding-left: 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.contact .mb-form input::placeholder,
+.contact .mb-form textarea::placeholder {
+  color: #2c3e50;
+}
+
+.contact .mb-form .mb-btn {
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+}
+
+.mb-form .form-control:focus {
+  box-shadow: 0 2px 0  rgba(13,110,253,.25);
+  border-color: none;
+  border-radius: 0;
+}
+
+
+/* footer */
 
 .mb-container-mini {
   width: 60%;
